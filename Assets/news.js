@@ -1,9 +1,9 @@
-// assets/news.js
+// Assets/news.js
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("news-container");
     const sortSelect = document.getElementById("sort-order");
 
-    const response = await fetch("assets/news.json");
+    const response = await fetch("Assets/news.json");
     const newsList = await response.json();
 
     function formatDate(dateISO) {

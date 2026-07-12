@@ -1,4 +1,4 @@
-// assets/favicon.js
+// Assets/favicon.js
 function loadFavicons() {
     const faviconImages = document.querySelectorAll("img.favicon");
 
