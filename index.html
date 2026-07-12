@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8" />
     <title>News | Grain6888</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
@@ -21,244 +22,18 @@
 
     <main class="github-main">
         <section class="news-section">
-            <h2 class="section-title">News</h2>
-
-            <!-- 2022 Animation Exercise -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Awarded the Grand Prize in 2022 Animation Exercise</h3>
-                    <span class="news-date">August 2022</span>
-                </header>
-                <p class="news-summary">
-                    In Osaka Institute of Technology’s <strong>Animation Exercise</strong>, his work was awarded the
-                    Grand Prize.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/2DFYjf9gpB4?si=IqkxTYlpPm0WSZ6K" target="_blank">Watch Video</a>
+            <div class="news-section-header">
+                <h2 class="section-title">News</h2>
+                <div class="news-controls">
+                    <label for="sort-order">Sort:</label>
+                    <select id="sort-order">
+                        <option value="desc">Newest first</option>
+                        <option value="asc">Oldest first</option>
+                    </select>
                 </div>
-            </article>
-
-            <!-- 2022 First Step Seminar -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Served as Organizer for 2022 First Step Seminar</h3>
-                    <span class="news-date">August 2022</span>
-                </header>
-                <p class="news-summary">
-                    He served as an organizer for the exhibition at the <strong>First Step Seminar</strong>, held during
-                    the Hirakata Campus festival.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/AzV9_24ViDk?si=r3XTNYM3sQ4Lf0ng" target="_blank">Watch Video</a>
-                </div>
-            </article>
-
-            <!-- 2022 Introduction to Information Media -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Awarded the Grand Prize in 2022 Introduction to Information Media</h3>
-                    <span class="news-date">January 2023</span>
-                </header>
-                <p class="news-summary">
-                    In <strong>Introduction to Information Media</strong>, his work was awarded the Grand Prize.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/SYeiFKihWH8?si=_0yfzSf-PC6ohpeQ" target="_blank">Watch Video</a>
-                </div>
-            </article>
-
-            <!-- TOSS PV 2023 -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Directed and Produced the 2023 PV for Juggling Club TOSS</h3>
-                    <span class="news-date">April 2023</span>
-                </header>
-                <p class="news-summary">
-                    The promotional video for <strong>Juggling Club TOSS</strong>, which he directed and produced, was
-                    released.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/7ix7d0hb6R0?si=Fepg_X9pAT_1FBkL" target="_blank">Watch Video</a>
-                    <a href="https://jugglingclubtoss.wixsite.com/toss/post/202３年度pvを公開しました！" target="_blank">Read
-                        Article</a>
-                </div>
-            </article>
-
-            <!-- Domestic PBL a -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Stakeholder Award & Hirakata Shinkin Bank Award (Domestic PBL)a</h3>
-                    <span class="news-date">August 2023</span>
-                </header>
-                <p class="news-summary">
-                    Their idea—including his promotional video—received both awards in <strong>Information Science
-                        Project Exercise (Domestic PBL)a</strong>.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/gckODtkSBCE?si=Gw-dAfUnTZuWz03f" target="_blank">Watch Video</a>
-                    <a href="https://www.oit.ac.jp/academic/is/soichalle/award.html" target="_blank">Read Article</a>
-                </div>
-            </article>
-
-            <!-- Domestic PBL b -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Extracurricular Activities Award & Excellence Award (Domestic PBL)b</h3>
-                    <span class="news-date">December 2023</span>
-                </header>
-                <p class="news-summary">
-                    Their project—including his promotional video—received both awards in <strong>Domestic
-                        PBL)b</strong>.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/SXrfLlE9OAo?si=oppZzpIyIjr0Xm4Q" target="_blank">Watch Video</a>
-                    <a href="https://www.oit.ac.jp/academic/is/soichalle/award.html" target="_blank">Read Article</a>
-                </div>
-            </article>
-
-            <!-- TOSS PV 2024 -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Directed and Produced the 2024 PV for Juggling Club TOSS</h3>
-                    <span class="news-date">April 2024</span>
-                </header>
-                <p class="news-summary">
-                    The 2024 promotional video for <strong>Juggling Club TOSS</strong> was released.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/6pNIwI2v2x4?si=RuIvxLO8o7_aUgep" target="_blank">Watch Video</a>
-                    <a href="https://jugglingclubtoss.wixsite.com/toss/post/2024年度pvを公開しました！" target="_blank">Read
-                        Article</a>
-                </div>
-            </article>
-
-            <!-- Kawakami Village PV Contest -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Grand Prize & Extracurricular Activities Award (Kawakami Village PV Contest)
-                    </h3>
-                    <span class="news-date">February 2025</span>
-                </header>
-                <p class="news-summary">
-                    His promotion video for <strong>Kawakami Village</strong> received both awards.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/oFksxEDZAn4?si=9eJEEdLR1bO0U2TB" target="_blank">Watch Video</a>
-                    <a href="https://www.oit.ac.jp/oit/kawakami/project02.html" target="_blank">Article 1</a>
-                    <a href="https://www.oit.ac.jp/news/koken/syakairenkei10620.html" target="_blank">Article 2</a>
-                    <a href="https://www.vill.kawakami.nara.jp/life/oit/docs/2025012400011/" target="_blank">Article
-                        3</a>
-                </div>
-            </article>
-
-            <!-- Media Science Exercise III -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Grand Prize in Media Science Exercise III</h3>
-                    <span class="news-date">March 2025</span>
-                </header>
-                <p class="news-summary">
-                    Their project—including his promotional video—won the Grand Prize in <strong>Media Science Exercise
-                        III</strong>.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/VCwm-U02iD8?si=ubKpteR_9ao8L-VC" target="_blank">Watch Video</a>
-                    <a href="https://github.com/Grain6888/MediaScienceExercise3-2024" target="_blank">Repository</a>
-                    <a href="https://www.oit.ac.jp/academic/is/media/curriculum.html" target="_blank">Read Article</a>
-                </div>
-            </article>
-
-            <!-- TOSS PV 2025 -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Directed and Produced the 2025 PV for Juggling Club TOSS</h3>
-                    <span class="news-date">April 2025</span>
-                </header>
-                <p class="news-summary">
-                    The 2025 promotional video for <strong>Juggling Club TOSS</strong> was released.
-                </p>
-                <div class="news-links">
-                    <a href="https://youtu.be/O_i2zoJFTpg?si=xKiJCUFe5Tg6CU12" target="_blank">Watch Video</a>
-                    <a href="https://jugglingclubtoss.wixsite.com/toss/post/2025年度pvを公開しました！" target="_blank">Read
-                        Article</a>
-                </div>
-            </article>
-
-            <!-- Midterm Presentation -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">2nd Place at 2025 Joint Midterm Presentation</h3>
-                    <span class="news-date">September 2025</span>
-                </header>
-                <p class="news-summary">
-                    His presentation on <strong>Stone Carving System Using Mixed Reality</strong> won 2nd place.
-                </p>
-                <div class="news-links">
-                    <a href="https://github.com/Grain6888/StoneCarvingSystemUsingMR" target="_blank">Repository</a>
-                    <a href="https://vclabo.com/research.html" target="_blank">Read Article</a>
-                </div>
-            </article>
-
-            <!-- Final Presentation -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">1st Place at 2025 Joint Final Presentation</h3>
-                    <span class="news-date">January 2026</span>
-                </header>
-                <p class="news-summary">
-                    His presentation on <strong>Stone Carving System Using Mixed Reality</strong> won 1st place.
-                </p>
-                <div class="news-links">
-                    <a href="https://github.com/Grain6888/StoneCarvingSystemUsingMR" target="_blank">Repository</a>
-                    <a href="https://vclabo.com/research.html" target="_blank">Read Article</a>
-                </div>
-            </article>
-
-            <!-- IPSJ Award -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Student Encouragement Award (IPSJ National Convention)</h3>
-                    <span class="news-date">March 2026</span>
-                </header>
-                <p class="news-summary">
-                    His presentation on <strong>Stone Carving System Using Mixed Reality</strong> received the Student
-                    Encouragement Award.
-                </p>
-                <div class="news-links">
-                    <a href="https://github.com/Grain6888/StoneCarvingSystemUsingMR" target="_blank">Repository</a>
-                    <a href="https://www.oit.ac.jp/news/prize/aevpi0000000140u.html" target="_blank">Article 1</a>
-                    <a href="https://www.ipsj.or.jp/event/taikai/88/WEB/data/pdf/4W-03.html" target="_blank">Article
-                        2</a>
-                    <a href="https://www.ipsj.or.jp/award/taikaigakusei.html" target="_blank">Article 3</a>
-                </div>
-            </article>
-
-            <!-- Research Excellence -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Research Excellence Award</h3>
-                    <span class="news-date">March 2026</span>
-                </header>
-                <p class="news-summary">
-                    His research on <strong>Stone Carving System Using Mixed Reality</strong> received the Research
-                    Excellence Award.
-                </p>
-                <div class="news-links">
-                    <a href="https://github.com/Grain6888/StoneCarvingSystemUsingMR" target="_blank">Repository</a>
-                </div>
-            </article>
-
-            <!-- Academic Excellence -->
-            <article class="news-card">
-                <header class="news-card-header">
-                    <h3 class="news-title">Academic Excellence Award</h3>
-                    <span class="news-date">March 2026</span>
-                </header>
-                <p class="news-summary">
-                    He received the Academic Excellence Award at the 2025 graduation ceremony.
-                </p>
-            </article>
-
+            </div>
+            <!-- JSONから自動生成 -->
+            <div id="news-container"></div>
         </section>
     </main>
 
@@ -268,6 +43,8 @@
         </p>
     </footer>
 
+    <script src="assets/news.js"></script>
+    <script src="assets/favicon.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
