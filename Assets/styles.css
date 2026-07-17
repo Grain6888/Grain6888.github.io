@@ -1,64 +1,70 @@
-/* Assets/styles.css */
-
-/* Light theme */
+/* ==========================================================================
+   1. グローバル変数 & 基本設定
+   ========================================================================== */
 :root {
-    --bg: #ffffff;
-    --bg-subtle: #f6f8fa;
-    --surface: #ffffff;
-    --border: #d0d7de;
-    --text: #24292f;
-    --text-muted: #57606a;
-    --accent: #0969da;
-    --accent-soft: rgba(9, 105, 218, 0.12);
-    --radius: 6px;
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --bg-default: #0d1117;
+    --bg-subtle: #161b22;
+    --border-color: #30363d;
+    --text-primary: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --accent-hover: #1f6feb;
+    --link-color: #58a6ff;
+    --code-bg: rgba(110, 118, 129, 0.4);
+    --hover-bg: rgba(177, 186, 196, 0.12);
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0d1117;
-        --bg-subtle: #010409;
-        --surface: #161b22;
-        --border: #30363d;
-        --text: #c9d1d9;
-        --text-muted: #8b949e;
-        --accent: #2f81f7;
-        --accent-soft: rgba(47, 129, 247, 0.15);
-        --shadow: 0 0 0 1px rgba(1, 4, 9, 0.2), 0 8px 24px rgba(1, 4, 9, 0.6);
-    }
-}
-
-html,
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--font);
 }
 
-/* Header */
+body {
+    background-color: var(--bg-default);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   2. ヘッダー & ナビゲーション (GitHub風)
+   ========================================================================== */
 .github-header {
-    background: var(--bg-subtle);
-    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-subtle);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 16px 0 16px;
 }
 
 .github-header-inner {
-    max-width: 960px;
-    margin: auto;
-    padding: 12px 16px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
+    padding-bottom: 16px;
 }
 
 .github-avatar {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+.github-avatar:hover {
+    transform: scale(1.05);
 }
 
 .github-title-group {
@@ -67,37 +73,292 @@ body {
 }
 
 .github-site-title {
-    margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .github-site-subtitle {
-    margin: 2px 0 0;
     font-size: 0.85rem;
     color: var(--text-muted);
 }
 
-/* Main */
+/* タブレイアウト */
+.github-tabs {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs-inner {
+    display: flex;
+    gap: 8px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-primary);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color);
+}
+
+.tab-btn.active {
+    font-weight: 600;
+    border-bottom-color: #f78166;
+    /* GitHub風アクティブオレンジ */
+}
+
+/* ==========================================================================
+   3. メインレイアウト & コンテナ設定
+   ========================================================================== */
 .github-main {
-    max-width: 960px;
-    margin: auto;
-    padding: 24px 16px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* ==========================================================================
+   4. Tips ページ（2カラムレイアウト & はみ出し防止）
+   ========================================================================== */
+.tips-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* 左側：サイドバー */
+.tips-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sidebar-title {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    background-color: rgba(110, 118, 129, 0.08);
+}
+
+.tips-list {
+    list-style: none;
+}
+
+.tips-item {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* タイトルが長すぎる場合に「...」で省略 */
+}
+
+.tips-item:last-child {
+    border-bottom: none;
+}
+
+.tips-item:hover {
+    background-color: var(--hover-bg);
+}
+
+.tips-item.active {
+    background-color: var(--hover-bg);
+    border-left: 4px solid var(--accent);
+    font-weight: 600;
+    padding-left: 12px;
+    /* ボーダー分の調整 */
+}
+
+/* 右側：記事表示エリア（極めて重要） */
+.tips-viewer {
+    flex: 1;
+    min-width: 0;
+    /* これが無いと子要素の長文やコードブロックで横に引き伸ばされます */
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 32px;
+}
+
+/* ==========================================================================
+   5. Markdown レンダリングスタイル（はみ出し対策の徹底）
+   ========================================================================== */
+.markdown-body {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+
+    /* 記事内の長文、URL、英単語を折り返して画面外へのはみ出しを防止 */
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 見出し */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.markdown-body h1 {
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.markdown-body h2 {
+    font-size: 1.4rem;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.markdown-body h3 {
+    font-size: 1.2rem;
+}
+
+/* 文章 & リスト */
+.markdown-body p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 2em;
+}
+
+.markdown-body li {
+    margin-top: 4px;
+}
+
+/* 引用 */
+.markdown-body blockquote {
+    padding: 0 1em;
+    color: var(--text-muted);
+    border-left: 0.25em solid var(--border-color);
+    margin: 0 0 16px 0;
+}
+
+/* コード表現（はみ出し防止のキモ） */
+.markdown-body code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+.markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 16px;
+    overflow-x: auto;
+    /* コードブロックが幅を超えたら内部だけでスクロール */
+    max-width: 100%;
+    background-color: rgba(110, 118, 129, 0.18);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.markdown-body pre code {
+    padding: 0;
+    font-size: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    white-space: pre;
+    /* 自動折り返しにしたい場合は pre-wrap に変更してください */
+}
+
+/* 画像（レスポンシブ対応） */
+.markdown-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+/* テーブル（はみ出し防止） */
+.markdown-body table {
+    display: block;
+    width: 100%;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    /* 表が画面幅を超えた場合、表部分のみ横スクロール可能に */
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body th,
+.markdown-body td {
+    padding: 6px 13px;
+    border: 1px solid var(--border-color);
+}
+
+.markdown-body tr {
+    background-color: var(--bg-default);
+    border-top: 1px solid var(--border-color);
+}
+
+.markdown-body tr:nth-child(2n) {
+    background-color: rgba(110, 118, 129, 0.05);
+}
+
+/* ==========================================================================
+   6. News ページ用スタイル
+   ========================================================================== */
+.news-section {
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 24px;
 }
 
 .news-section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .section-title {
-    margin: 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -106,159 +367,72 @@ body {
     align-items: center;
     gap: 8px;
     font-size: 0.9rem;
-    color: var(--text-muted);
 }
 
-#sort-order {
+.news-controls select {
+    background-color: var(--bg-default);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
     padding: 4px 8px;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    color: var(--text);
+    border-radius: 6px;
+    outline: none;
 }
 
-/* Year groups */
-.year-group {
-    margin-top: 16px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    background: var(--surface);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-}
-
-.year-header {
+#news-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 12px;
-    cursor: pointer;
-    background: var(--bg-subtle);
+    flex-direction: column;
+    gap: 16px;
 }
 
-.year-title {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
+.news-item {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
 }
 
-.year-toggle {
-    font-size: 0.85rem;
-    color: var(--text-muted);
+.news-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
-.year-body {
-    padding: 12px;
-    display: none;
-}
-
-.year-body.open {
-    display: block;
-}
-
-/* Cards */
-.news-card {
-    background: var(--surface);
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    padding: 12px 12px 10px;
-    margin-bottom: 10px;
-}
-
-.news-card-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.news-title {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.news-date {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    padding: 2px 8px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-}
-
-.news-summary {
-    margin: 8px 0 10px;
-    font-size: 0.92rem;
-    line-height: 1.5;
-}
-
-/* Links + favicons */
-.news-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6em;
-}
-
-.news-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: var(--accent);
-    background: var(--accent-soft);
-    padding: 6px 12px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
-
-.news-link:hover {
-    background: var(--accent);
-    color: #fff;
-    border-color: var(--accent);
-}
-
-.favicon {
-    width: 1em;
-    height: 1em;
-    border-radius: 4px;
-}
-
-/* Footer */
+/* ==========================================================================
+   7. フッター
+   ========================================================================== */
 .github-footer {
-    background: var(--bg-subtle);
-    border-top: 1px solid var(--border);
-    padding: 12px 16px;
-}
-
-.footer-text {
-    max-width: 960px;
-    margin: auto;
-    font-size: 0.8rem;
-    color: var(--text-muted);
+    max-width: 1200px;
+    margin: 48px auto 0 auto;
+    padding: 24px 16px;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+.footer-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
 
-    .github-header-inner,
-    .github-main {
-        padding-left: 12px;
-        padding-right: 12px;
+/* ==========================================================================
+   8. モバイル・タブレット向けメディアクエリ（レスポンシブ対応）
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* 1カラム化してサイドバーを上部、記事をスクロールして読めるように調整 */
+    .tips-layout {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .github-site-title {
-        font-size: 1.15rem;
+    .tips-sidebar {
+        width: 100%;
+        max-height: 200px;
+        /* スマートフォンでは長くなりすぎないようスクロールに */
+        overflow-y: auto;
     }
 
-    .github-avatar {
-        width: 40px;
-        height: 40px;
+    .tips-viewer {
+        padding: 16px;
     }
 
-    .news-card {
-        padding: 10px;
+    .markdown-body {
+        font-size: 0.95rem;
     }
 }
