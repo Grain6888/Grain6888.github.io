@@ -1,12 +1,9 @@
 ---
-title: 2022年度 Introduction to Information Media 最優秀賞受賞
+layout: post
+title: "2022年度 Introduction to Information Media 最優秀賞受賞"
 date: 2023-01-01
 ---
 
 大阪工業大学の授業「Introduction to Information Media」で制作した映像作品が、最優秀賞を受賞しました。
-
-この授業では、情報メディアの基礎を学びながら、映像表現の企画・撮影・編集を実践します。私は、身近なテーマを題材にしつつ、視聴者が最後まで引き込まれる構成を意識して制作しました。
-
-作品の完成度だけでなく、テーマの切り取り方や映像のテンポ感を高く評価していただき、最優秀賞という形で成果が認められました。
 
 - [作品を見る（YouTube）](https://youtu.be/SYeiFKihWH8?si=_0yfzSf-PC6ohpeQ) — 授業内で制作した映像作品を視聴できます。
