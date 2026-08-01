@@ -14,4 +14,8 @@
 <link rel="manifest" href="/_includes/favicon/site.webmanifest" />
 
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+{% feed_meta %}
 <title>{{ page.title }}</title>
+<link rel="preload" href="{{ 'css/screen.css' | relative_url }}" as="style" />
+<link rel="stylesheet" href="{{ 'css/screen.css' | relative_url }}" />
