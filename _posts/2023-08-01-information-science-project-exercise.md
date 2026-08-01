@@ -1,15 +1,12 @@
 ---
-title: 2023年度 Information Science Project Exercise (Domestic PBL)a 受賞
+layout: post
+title: "2023年度 Information Science Project Exercise (Domestic PBL)a 受賞"
 date: 2023-08-01
 ---
 
 大阪工業大学の授業「Information Science Project Exercise (Domestic PBL)a」にて、7名のチームで企画制作を行いました。
 
-フロントエンジニアと兼任してプロモーション映像の制作を担当し、企画の魅力を視覚的に伝える役割を担いました。
-
-チーム全体でアイデアを磨き上げ、地域課題の解決をテーマにした企画を発表した結果、ステークホルダー賞と枚方信用金庫賞の2つの賞を受賞しました。
-
-映像制作だけでなく、チームで課題に向き合う経験は、プロジェクト運営の難しさと楽しさを学ぶ貴重な機会となりました。
+フロントエンジニアと兼任してプロモーション映像の制作を担当し、ステークホルダー賞と枚方信用金庫賞の2つの賞を受賞しました。
 
 - [作品を見る（YouTube）](https://youtu.be/gckODtkSBCE?si=Gw-dAfUnTZuWz03f) — チームが制作したプロモーション映像を視聴できます。
 - [記事を読む（大阪工業大学）](https://www.oit.ac.jp/academic/is/soichalle/award.html) — 受賞結果の公式発表ページです。

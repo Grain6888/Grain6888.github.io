@@ -1,13 +1,10 @@
 ---
-title: 2024年度 Juggling Club TOSS プロモーションビデオ制作
+layout: post
+title: "2024年度 Juggling Club TOSS プロモーションビデオ制作"
 date: 2024-04-01
 ---
 
 公認部活動団体「Juggling Club TOSS」の2024年度プロモーションビデオを監督・制作しました。
-
-前年の経験を活かし、よりダイナミックな映像表現を目指して撮影・編集を行いました。部員の技術やクラブの雰囲気が伝わるよう、構成やカット割りにもこだわりました。
-
-公開後は、クラブの新入生勧誘や活動紹介に広く活用されました。
 
 - [作品を見る（YouTube）](https://youtu.be/6pNIwI2v2x4?si=RuIvxLO8o7_aUgep) — 2024年度の公式PVを視聴できます。
 - [記事を読む（公式ブログ）](https://jugglingclubtoss.wixsite.com/toss/post/2024年度pvを公開しました！) — PV公開のお知らせ記事です。
