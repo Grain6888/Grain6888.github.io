@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.4'
-# gem 'jekyll-theme-minima'
+gem 'jekyll-theme-modernist'

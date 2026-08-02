@@ -1,3 +1,4 @@
 title: Grain6888's Portfolio
+theme: jekyll-theme-modernist
 include:
     - "_includes/favicon"
