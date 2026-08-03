@@ -4,6 +4,8 @@ title: "2024年度 Media Science Exercise III 最優秀賞受賞"
 date: 2025-03-01
 ---
 
+# {{ page.title }}
+
 大阪工業大学の授業「Media Science Exercise III」にて、5名のチームで企画制作を行いました。
 
 画像処理に関するメイン処理の開発担当と兼任してプロモーション映像の制作を担当し、最優秀賞を受賞しました。

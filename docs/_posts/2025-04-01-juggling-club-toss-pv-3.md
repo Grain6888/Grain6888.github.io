@@ -4,6 +4,8 @@ title: "2025年度 Juggling Club TOSS プロモーションビデオ制作"
 date: 2025-04-01
 ---
 
+# {{ page.title }}
+
 公認部活動団体「Juggling Club TOSS」の2025年度プロモーションビデオを監督・制作しました。
 
 - [作品を見る（YouTube）](https://youtu.be/O_i2zoJFTpg?si=xKiJCUFe5Tg6CU12) — 2025年度の公式PVを視聴できます。
