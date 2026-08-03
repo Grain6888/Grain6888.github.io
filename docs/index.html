@@ -10,7 +10,7 @@ title: Grain6888's Portfolio
     <li>
         {{ post.date | date: "%Y-%m-%d" }}
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
+        {{ post.excerpt | strip_html | truncatewords: 30, "…" }}
     </li>
     {% endfor %}
 </ul>

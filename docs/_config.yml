@@ -1,5 +1,7 @@
 title: Grain6888's Portfolio
-theme: jekyll-theme-modernist
+remote_theme: pages-themes/leap-day@v0.2.0
 show_downloads: true
 include:
     - "_includes/favicon"
+plugins:
+    - jekyll-remote-theme
