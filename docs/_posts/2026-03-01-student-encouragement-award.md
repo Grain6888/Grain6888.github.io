@@ -4,8 +4,6 @@ title: "2025年度 第88回 IPSJ全国大会 学生奨励賞受賞"
 date: 2026-03-01
 ---
 
-# {{ page.title }}
-
 **第88回情報処理学会全国大会**(IPSJ)にて、**MRを用いた石彫制作システム**(Stone Carving System Using Mixed Reality)に関する発表が**学生奨励賞**を受賞しました。
 
 - [リポジトリを見る(GitHub)](https://github.com/Grain6888/StoneCarvingSystemUsingMR) — プロジェクトのソースコードです。
