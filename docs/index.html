@@ -1,12 +1,15 @@
 ---
 layout: default
-title: Grain6888's Portfolio
+title: ホーム
 ---
 
-<h1>Latest Posts</h1>
+<h1>ホーム</h1>
 
+<hr />
+
+<h2>最近の投稿</h2>
 <ul>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     <li>
         {{ post.date | date: "%Y-%m-%d" }}
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -14,67 +17,12 @@ title: Grain6888's Portfolio
     </li>
     {% endfor %}
 </ul>
+<p>過去の投稿は<a href="/posts/">こちらから</a>ご確認いただけます。</p>
 
-<h2>その他の学外活動</h2>
-<h3>
-    <a href="https://shimamotobamboo.wixsite.com/home"
-        >しまもとバンブークラブ</a
-    >
-</h3>
-<ul>
-    <li>
-        2022年4月～2026年3月：大道芸教室にて講師担当(<a
-            href="https://shimamotobamboo.wixsite.com/home/post/%E3%81%97%E3%81%BE%E3%82%82%E3%81%A8%E9%9F%B3%E6%A5%BD%E3%83%95%E3%82%A7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%90%E3%83%AB%E3%81%A7%E7%99%BA%E8%A1%A8%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F"
-            >活動記事はこちら</a
-        >)
-    </li>
-</ul>
+<hr />
 
-<h3>
-    <a href="https://jugglingclubtoss.wixsite.com/toss"
-        >ジャグリングクラブTOSS(大学公認)</a
-    >
-</h3>
-<ul>
-    <li>
-        2023年4月～2026年3月：渉外担当として学内外の諸団体と出演交渉に関して部活動を運営
-    </li>
-    <li>
-        2023年4月～2025年4月：2023～2025年度の部活動紹介用PVを監督・作成(<a
-            href="https://www.youtube.com/@toss8071"
-            >公式YouTubeチャンネルはこちら</a
-        >)
-    </li>
-</ul>
-
-<h2>保有資格</h2>
-<ul>
-    <li>普通自動車第一種運転免許(AT限定)(2024.3)</li>
-    <li>基本情報技術者試験(2024.7)</li>
-    <li>高等学校教諭一種免許状(情報)(2026.3)</li>
-    <li>高等学校教諭一種免許状(数学)(2026.3)</li>
-</ul>
-
-<h2>外部リンク</h2>
-<h3>大学・研究室</h3>
-<ul>
-    <li><a href="https://vclabo.com/">VCLab - Visual Computing Lab</a></li>
-    <li><a href="https://www.oit.ac.jp/">大阪工業大学</a></li>
-</ul>
-
-<h3>所属団体</h3>
-<ul>
-    <li>
-        <a href="https://jugglingclubtoss.wixsite.com/toss"
-            >ジャグリングクラブTOSS</a
-        >
-    </li>
-</ul>
-
-<h3>SNS</h3>
-<ul>
-    <li><a href="https://github.com/Grain6888">GitHub</a></li>
-    <li><a href="https://x.com/dragon_min____">X(Twitter)</a></li>
-    <li><a href="https://www.instagram.com/dragon_min____/">Instagram</a></li>
-    <li><a href="https://www.threads.com/@dragon_min____">Threads</a></li>
-</ul>
+<h2>Borderless Journey</h2>
+<img
+    src="https://raw.githubusercontent.com/Grain6888/Grain6888/main/output/details.svg"
+    alt="Details"
+/>
