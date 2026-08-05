@@ -1,5 +1,5 @@
 title: Grain6888's Portfolio
 theme: jekyll-theme-modernist
-show_downloads: true
+show_downloads: false
 include:
     - "_includes/favicon"
