@@ -6,5 +6,7 @@ date: 2023-04-01
 
 公認部活動団体**ジャグリングクラブTOSS**(Juggling Club TOSS)の2023年度プロモーションビデオを**監督**・**制作**しました。
 
+[![YouTube Thumbnail](http://img.youtube.com/vi/7ix7d0hb6R0/maxresdefault.jpg)](https://youtu.be/7ix7d0hb6R0?si=Fepg_X9pAT_1FBkL)
+
 - [作品を見る(YouTube)](https://youtu.be/7ix7d0hb6R0?si=Fepg_X9pAT_1FBkL) — 2023年度の公式PVを視聴できます。
 - [記事を読む(公式ブログ)](https://jugglingclubtoss.wixsite.com/toss/post/2023年度pvを公開しました！) — PV公開のお知らせ記事です。

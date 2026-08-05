@@ -6,4 +6,9 @@ date: 2025-03-19
 
 **2024年度川上村プロモーションビデオコンテスト**の功績により、**課外活動賞**を受賞しました。
 
-- [作品を見る(YouTube)](https://youtu.be/VCwm-U02iD8?si=ubKpteR_9ao8L-VC) — チームが制作したプロモーション映像を視聴できます。
+[![YouTube Thumbnail](http://img.youtube.com/vi/oFksxEDZAn4/maxresdefault.jpg)](https://youtu.be/oFksxEDZAn4?si=9eJEEdLR1bO0U2TB)
+
+- [作品を見る(YouTube)](https://youtu.be/oFksxEDZAn4?si=9eJEEdLR1bO0U2TB) — 川上村の魅力を紹介するプロモーション映像です。
+- [記事を読む(大阪工業大学)](https://www.oit.ac.jp/oit/kawakami/project02.html) — プロジェクト紹介記事です。
+- [記事を読む(大阪工業大学・社会連携)](https://www.oit.ac.jp/news/koken/syakairenkei10620.html) — 受賞に関する公式ニュースです。
+- [記事を読む(川上村公式)](https://www.vill.kawakami.nara.jp/life/oit/docs/2025012400011/) — 川上村によるプロジェクト紹介ページです。
