@@ -1,0 +1,44 @@
+<footer>
+    <nav class="site-map">
+        <ul>
+            <li>
+                <a href="{{ '/' | relative_url }}">Home</a>
+            </li>
+            <li>
+                <a href="{{ '/posts.html' | relative_url }}">Posts</a>
+            </li>
+            <li>
+                <a href="{{ '/about.html' | relative_url }}">About</a>
+            </li>
+            <li>
+                <a href="{{ '/link.html' | relative_url }}">Links</a>
+            </li>
+        </ul>
+    </nav>
+
+    <style>
+        .site-map ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding-left: 0;
+        }
+        .site-map li {
+            margin: 0 10px;
+        }
+    </style>
+
+    <hr />
+
+    {% if site.github.is_project_page %}
+    <p>
+        Project maintained by
+        <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+    </p>
+    {% endif %}
+    <p>
+        Hosted on GitHub Pages &mdash; Theme by
+        <a href="https://github.com/orderedlist">orderedlist</a>
+    </p>
+    <p>&copy; {{ site.time | date: "%Y" }} Grain6888. All rights reserved.</p>
+</footer>
