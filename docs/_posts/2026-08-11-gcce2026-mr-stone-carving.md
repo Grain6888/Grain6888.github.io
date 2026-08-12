@@ -1,21 +1,13 @@
 ---
 layout: post
-title: "GCCE2026にMRを用いた石彫制作システムの論文が採択されました"
+title: "GCCE 2026 採択"
 date: 2026-08-11
 ---
 
-![GCCE2026 Acceptance]({{ '/assets/images/gcce2026_thumb.png' | relative_url }})
+[**GCCE 2026**](https://www.ieee-gcce.org/2026/index.html)に、**MRを用いた石彫制作システム**(Stone Carving System Using Mixed Reality)に関する研究発表が採択されました。
 
-本日、IEEE‑GCCT 2026でMRを用いた石彫制作システムに関する論文が採択されました。詳細は以下からご確認いただけます。
+[![YouTube Thumbnail](http://img.youtube.com/vi/G4mRVCAPvTw/maxresdefault.jpg)](https://www.youtube.com/watch?v=G4mRVCAPvTw)
 
-- **リポジトリ**: <https://github.com/Grain6888/mr-stone-carving>
-- **論文PDF**: <{{ '/assets/papers/gcce2026_mr_stone.pdf' | relative_url }}>
-- **デモムービー**:
-  ```html
-  <video controls width="640">
-    <source src="{{ '/assets/videos/gcce2026_demo.mp4' | relative_url }}" type="video/mp4">
-    ご利用のブラウザは動画タグに対応していません。
-  </video>
-  ```
-
-(ここで本文を続ける...)
+- [リポジトリを見る(GitHub)](https://github.com/Grain6888/StoneCarvingSystemUsingMR) — プロジェクトのソースコードです。
+- [記事を読む(Visual Computing Lab)](https://vclabo.com/research/2025-4.pdf) — 研究内容のPDFです。
+- [デモを見る(YouTube)](https://www.youtube.com/watch?v=G4mRVCAPvTw) — システムを体験する様子を視聴できます。
